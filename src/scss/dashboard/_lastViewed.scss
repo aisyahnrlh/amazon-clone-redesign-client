@@ -1,0 +1,27 @@
+.productDashboard {
+    margin-bottom: 2rem;
+
+    &-title {
+        margin: 2rem 0 1rem 0;
+    }
+
+    &-title>p {
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+    &-title>p>span>img {
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+
+    &-titleCTA>p {
+        margin-right: 1rem;
+        font-size: 0.9rem;
+        color: $darkerGray;
+    }
+
+    &-titleCTA>svg {
+        transform: rotate(180deg);
+    }
+}

@@ -1,0 +1,16 @@
+.footer {
+    background-color: $almostWhite;
+    padding: 1rem 5rem;
+    width: -moz-available;
+
+    &__col1 {
+        &>p:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    &__col1>p,
+    &__col2>p {
+        font-size: 0.8rem;
+    }
+}

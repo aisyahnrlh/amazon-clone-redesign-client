@@ -1,0 +1,80 @@
+.product {
+    background-color: $almostWhite;
+    max-width: 12rem;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: $pureBlack;
+
+    &__bestSeller {
+        font-size: 0.7rem;
+        background-color: #E99A04;
+        color: $pureWhite;
+        padding: 0.2rem 0.5rem;
+        width: max-content;
+        border-radius: 3px;
+        margin-bottom: 0.5rem;
+    }
+
+    &__image {
+        width: 100%;
+        height: 9rem;
+        object-fit: contain;
+        margin-bottom: 0.5rem;
+    }
+
+    &__shipping {
+        font-size: 0.75rem;
+        color: $darkerGray;
+        margin-bottom: 1rem;
+    }
+
+    &__title {
+        font-weight: 500;
+        text-align: left;
+        margin-bottom: 0.5rem;
+        line-height: 1.5;
+        font-size: 0.9rem;
+        height: 43.2px;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        white-space: pre-wrap;
+        text-overflow: ellipsis;
+    }
+
+    &__star {
+        width: 0.7rem;
+        height: 0.7rem;
+    }
+
+    &__review {
+        text-align: left;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+
+        & span {
+            font-size: 0.7rem;
+            margin-left: 0.75rem;
+            font-weight: 500;
+            color: $darkerGray;
+        }
+    }
+
+    &__price {
+        text-align: left;
+        font-size: 1.2rem;
+        font-weight: 700;
+
+        &-fixed {
+            margin-right: 1rem;
+        }
+
+        &-discount {
+            color: $darkerGray;
+            font-size: 0.85rem;
+            text-decoration: line-through;
+        }
+    }
+}

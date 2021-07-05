@@ -1,0 +1,63 @@
+.userIn {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.signup {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem;
+
+    &-title {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.form-control {
+    margin-bottom: 1rem;
+
+    &>label {
+        margin-bottom: 0.5rem;
+    }
+
+    &>input,
+    &-button {
+        font-size: 1rem;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    &>input {
+        border: 1px solid black;
+        transition: all .3s ease-in-out;
+        background-color: white;
+    }
+
+    &>input:focus {
+        outline: none;
+        outline-color: $yellow;
+        border-color: $yellow;
+    }
+
+    &-button {
+        background-color: $yellow;
+        width: 300px;
+        border: none;
+        outline: none;
+        color: white;
+        border: 1px solid $yellow;
+        cursor: pointer;
+        margin-bottom: 1rem;
+        transition: all .3s ease-in-out;
+        margin-top: 1rem;
+    }
+
+    &-button:hover {
+        background-color: white;
+        color: black;
+    }
+}

@@ -1,0 +1,167 @@
+.checkout {
+    padding: 3rem 2rem;
+    flex: 0.65;
+
+    &__items {
+        border-collapse: separate;
+        border-spacing: 0 1rem;
+    }
+
+    &__title {
+        margin-bottom: 2rem;
+    }
+
+    &__title1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-right: 2rem;
+    }
+
+    &__to-home {
+        text-decoration: none;
+        color: $darkerGray;
+        font-size: 0.8rem;
+
+        & span svg {
+            opacity: 0.7;
+            height: 0.9rem;
+            margin-right: 0.7rem;
+        }
+    }
+
+    &__items {
+        width: 100%;
+
+        &-title {
+            color: $darkerGray;
+
+            &>th {
+                font-size: 0.9rem;
+                font-weight: 500;
+                text-align: left;
+                padding-left: 2rem;
+            }
+        }
+    }
+
+    &__item {
+        background-color: $almostWhite;
+
+        &-product {
+            padding: 1rem 2rem;
+        }
+
+        &-checkbox {
+            margin-right: 2rem;
+        }
+
+        &-image {
+            width: 6rem;
+            height: 6rem;
+            object-fit: contain;
+            margin-right: 2rem;
+        }
+
+        &-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        &-desc {
+            &>*:not(:last-child) {
+                margin-right: 1.5rem;
+            }
+
+            &>p {
+                color: #4c4b4d;
+                font-size: 0.85rem;
+            }
+
+            &>p>strong {
+                color: $pureBlack;
+            }
+        }
+
+        &-qty {
+            padding: 0 2rem;
+
+            &>*:not(:last-child) {
+                margin-right: 1rem;
+            }
+
+            &>svg {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__text small {
+        display: inline-block;
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+        color: $darkerGray;
+    }
+
+    &__gift p {
+        font-size: 0.85rem;
+        color: $darkerGray;
+    }
+
+    &__price {
+        font-weight: 600;
+        padding: 0 2rem;
+    }
+
+    &__options {
+        padding: 0 3rem 0 2rem;
+
+        &>* {
+            cursor: pointer;
+        }
+
+        &>*:hover {
+            stroke: $yellow;
+        }
+
+        &>*:first-child {
+            top: 1rem;
+        }
+
+        &>*:last-child {
+            bottom: 1rem;
+        }
+    }
+
+    &__shipping {
+        &-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            line-height: 2;
+        }
+
+        &-options {
+            flex: 0.7;
+            line-height: 1.5;
+            font-size: 0.85rem;
+            color: $darkerGray;
+        }
+    }
+
+    &__total {
+        flex: 0.25;
+        line-height: 1.75;
+        font-size: 0.85rem;
+
+        &-title,
+        &-amount {
+            color: $darkerGray;
+        }
+
+        &-row3>.checkout__total-amount {
+            color: $pureBlack;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@import 'checkout';
+@import 'payment';
+
+.shoppingCart {
+    display: flex;
+    justify-content: space-between;
+}

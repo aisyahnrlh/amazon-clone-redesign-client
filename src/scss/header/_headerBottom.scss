@@ -1,0 +1,83 @@
+.nav {
+    padding: 1rem 2rem;
+
+    &__logo {
+        width: 100px;
+        object-fit: contain;
+    }
+}
+
+.nav__links {
+    &>.nav__link:not(:last-child) {
+        margin-right: 1.5rem;
+    }
+}
+
+.nav__link {
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    color: $pureBlack;
+
+    &:hover {
+        color: $yellow;
+    }
+
+    &:hover .icon-tabler,
+    &:hover .nav__all svg {
+        stroke: $yellow;
+    }
+}
+
+.cart__total {
+    font-size: 0.7rem;
+    color: $pureWhite;
+    background-color: $yellow;
+    width: 0.9rem;
+    height: 0.9rem;
+    top: -0.5rem;
+    right: -0.5rem;
+    padding: 0.1rem;
+    border-radius: 0.9rem;
+}
+
+.nav__all {
+    & svg {
+        margin-right: 0.3rem;
+    }
+}
+
+.user__dropdown {
+
+    &-signed,
+    &-unsigned {
+        background-color: $pureWhite;
+        border-radius: 5px;
+        z-index: 1;
+        font-size: 0.9rem;
+        padding: 1rem 2rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        line-height: 2.5;
+        top: 2rem;
+        cursor: pointer;
+        color: black;
+    }
+
+    &-signed>p,
+    &-unsigned>p {
+        transition: all .3s ease-in-out;
+    }
+
+    &-signed>p:hover,
+    &-unsigned>p:hover {
+        color: $yellow;
+    }
+
+    &-signed {
+        left: -7.5rem;
+    }
+
+    &-unsigned {
+        left: -2rem;
+    }
+}

@@ -1,0 +1,17 @@
+.nav__top {
+    padding: 0.5rem 2rem 0.25rem 2rem;
+    font-size: 0.8rem;
+    color: $darkerGray;
+
+    &-right {
+        &>li {
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+
+            &>*:not(:last-child) {
+                margin-right: 0.3rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.main {
+    padding: 1rem 2rem 0 2rem;
+
+    &__banner {
+        background-color: #F2F3F5;
+
+        &-left,
+        &-right {
+            flex: 0.5;
+        }
+
+        &-left {
+            line-height: 1.25;
+            padding: 8.5rem 0 8.5rem 6rem;
+        }
+
+        &-left>h1 {
+            font-size: 48px;
+        }
+
+        &-left>p,
+        &-left>button {
+            margin-top: 1rem;
+        }
+
+        &-left>p {
+            max-width: 350px;
+        }
+
+        &-left>button {
+            border: 1px solid $pureBlack;
+            border-radius: 5px;
+            padding: 0.5rem 2rem;
+        }
+
+        &-right {
+            width: min-content;
+            padding-bottom: 3rem;
+        }
+
+        &-card {
+            background-color: $darkerWhite;
+            padding: 1rem 7.5rem 1rem 2rem;
+            border-radius: 10px;
+        }
+
+        &-category {
+            color: $darkerGray;
+            font-size: 0.7rem;
+            line-height: 3;
+        }
+
+        &-title {
+            line-height: 1.5;
+            margin-bottom: 0.5rem;
+            height: 48px;
+            max-width: 250px;
+        }
+
+        &-price {
+            margin-bottom: 2rem;
+
+            &-fixed {
+                font-size: 1.2rem;
+                font-weight: 700;
+                margin-right: 1rem;
+            }
+
+            &-discount {
+                color: #4C4B4D;
+                font-size: 0.9rem;
+                text-decoration: line-through;
+                font-weight: 700;
+            }
+        }
+
+        &-productCTA>p {
+            font-size: 0.8rem;
+            color: $darkerGray;
+            margin-right: 1rem;
+        }
+
+        &-productCTA>svg {
+            transform: rotate(180deg);
+        }
+
+        &-productImg {
+            width: min-content;
+            bottom: 5rem;
+            left: 10rem;
+
+            &>p {
+                color: $darkerWhite;
+                background-color: $yellow;
+                width: 33px;
+                height: 33px;
+                display: flex;
+                align-items: center;
+                border-radius: 33px;
+                padding: 0.25rem;
+                top: 0;
+                right: 0;
+            }
+        }
+
+        &-img {
+            width: 400px;
+            height: 400px;
+            object-fit: contain;
+        }
+    }
+
+    &__products {
+        box-sizing: content-box;
+        max-width: 1455px;
+        flex-wrap: wrap;
+    }
+}
